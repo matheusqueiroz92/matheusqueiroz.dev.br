@@ -13,6 +13,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="javascript/app.js"></script>
   </head>
 
   <body class="secao1">
@@ -68,7 +69,7 @@
         <a href="curriculo-matheus-queiroz.pdf" download class="btn">Download CV</a>
       </div>
       <div class="home-img">
-        <img src="images/home.png" alt="home">
+        <img src="images/matheus-2.png" alt="home">
       </div>
     </section>
     
@@ -173,17 +174,19 @@
     <section class="contact" id="contact">
       <h2 class="heading">Fale <span>Comigo!</span></h2>
 
-      <form action="">
+      <form action="https://formsubmit.co/ajax/matheus_giga@hotmail.com" method="post" data-form>
         <div class="input-box">
-          <input type="text" placeholder="Nome completo">
-          <input type="email" placeholder="E-mail">  
+          <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+          <input type="email" name="email" id="email" placeholder="E-mail" required>  
         </div>
+
         <div class="input-box">
-          <input type="number" placeholder="Telefone">
-          <input type="text" placeholder="Assunto do e-mail">  
+          <input type="number" name="telefone" id="telefone" placeholder="Telefone">
+          <input type="text" name="assunto" id="assunto" placeholder="Assunto do e-mail">  
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-        <input type="submit" value="Enviar mensagem" class="btn">
+        
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn" id="btn-form" data-button>Enviar Mensagem</button>
       </form>
     </section>
 

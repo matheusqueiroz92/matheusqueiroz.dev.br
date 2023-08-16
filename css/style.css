@@ -592,3 +592,19 @@ selector {
 .logo-show {
   display: block;
 }
+
+input, textarea {
+    border: 0.125rem solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+    outline: none;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.3125rem var(--bg-color);
+}
+
+#btn-form:disabled {
+    cursor: not-allowed;
+    background: gray;
+}
